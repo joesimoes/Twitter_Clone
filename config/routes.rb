@@ -1,11 +1,9 @@
 TwitterClone::Application.routes.draw do
-  get "sessions/new"
 
-  get "sessions/create"
-
-  get "sessions/destroy"
-
+  resources :sessions
   resources :users
+
+  get 'logout', to: 'sessions#destroy', as: 'logout'
   
   root to: "users#new"	
 
