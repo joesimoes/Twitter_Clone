@@ -22,4 +22,3 @@ class User < ActiveRecord::Base
     self.avatar_url = "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(self.email)}?s=50"
   end
 end
-end

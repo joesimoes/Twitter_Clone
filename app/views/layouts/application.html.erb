@@ -13,11 +13,10 @@
     <span>Twitter Clone</span>
   </div>
 </header>
-<div id="content"
+<div id="content">
   <div class="wrapper">
     <% flash.each do |name,msg| %>
-      <%= content_tag :div, msg, class: 
-flash #{name}" %>
+      <%= content_tag :div, msg, class: "flash #{name}" %>
     <% end %>
     <%= yield %>
   </div>
