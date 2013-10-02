@@ -1,10 +1,14 @@
+<% if current_user %>
+  <%= render 'ribbits/new_form' %>
+<% end %>
+
 <div id="ribbits" class="panel left">
   <h1> Your Ribbit Profile </h1>
   <div class="ribbitWrapper">
     <img class="avatar" src="<%= @user.avatar_url %>" />
     <span class="name"><%= @user.name %></span>@<%= @user.username %>
     <p>
-      XX Ribbits
+      <%= @user.ribbits.length %> Ribbits
       <span class="spacing"> XX Followers </span>
       <span class="spacing"> XX Following </span>
     </p>
