@@ -2,7 +2,9 @@
   <h1> Create a Ribbit </h1>
   <%= form_for @ribbit do |f| %>
     <%= f.text_area :content, class: "ribbitText", id: "ribbitText" %>
-    <%= f.submit "Ribbit!" %>
+    <%= f.submit "Ribbit!", id: "ribbitBtn"  %>
     <span id="charCount">0</span>
+    
   <% end %>
+
 </div>

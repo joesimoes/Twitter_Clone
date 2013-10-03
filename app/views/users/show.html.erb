@@ -3,7 +3,7 @@
 <% end %>
 
 <div id="ribbits" class="panel left">
-  <h1> Your Ribbit Profile </h1>
+  <h1> Ribbit Profile </h1>
   <div class="ribbitWrapper">
     <img class="avatar" src="<%= @user.avatar_url %>" />
     <span class="name"><%= @user.name %></span>@<%= @user.username %>
@@ -19,5 +19,6 @@
   <div class="ribbitWrapper">
     Ribbits coming...
   </div>
-
 </div>
+
+<%= javascript_include_tag 'ribbits' %>
